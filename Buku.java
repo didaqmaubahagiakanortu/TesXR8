@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Buku {
     int id;
     String judul;
@@ -14,6 +16,20 @@ public class Buku {
     }
 
     public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Masukkan judul buku.");
+        String judul = input.nextLine();
+
+        System.out.println("Masukkan pengarang buku.");
+        String pengarang = input.nextLine();
+
+        System.out.println("Masukkan ID buku.");
+        int id = input.nextInt();
+
+        System.out.println("Masukkan tahun terbit.");
+        int tahunTerbit = input.nextInt();
 
         Buku sakaDays = new Buku(2110, "Sakamoto Days", "Yuto Suzuki", 2020);
         Buku fazbearFrights = new Buku(1987, "Fazbear's Frights", "Scott Cawthon", 2019);
@@ -55,6 +71,12 @@ public class Buku {
         System.out.println(detectiveConan.pengarang);
         System.out.println(detectiveConan.tahunTerbit);
         System.out.println(detectiveConan.id);
+        System.out.println("");
+
+        System.out.println(judul);
+        System.out.println(pengarang);
+        System.out.println(tahunTerbit);
+        System.out.println(id);
         System.out.println("");
 
     }
